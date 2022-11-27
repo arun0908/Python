@@ -1,2 +1,3 @@
 # Python
-Repository containing general and non project python codes 
+
+General repository for all non-project python code. 
