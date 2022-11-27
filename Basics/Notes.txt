@@ -1,0 +1,105 @@
+Python is similar to Java and follows various object-oriented programming concepts like Inheritance, polymorphism etc
+Python is not a statically typed language as variables are not statically declared, but are dynamically typed and change values
+Python makes use of variables similar to other programming languages and uses various other data structures like lists, tuples, dictionaries
+Data types in python are similar to other programing concepts like number data types, string data types, boolean data types etc
+In python there is not particular syntax which can be used and is a easily typed language which is mostly high level and is an interpreted language
+In python a file is created with an default extension of py indicating it is a python file
+#: this is a comment in python not the conventional / or */ as in java or javascript """ is used for multi line comment
+PiP is a package manager by python which can be used to install various packages in python
+As default python 3.4 or later includes PIP. you can run pip commands in terminal window to install packages
+PyPi is a site which can be used to search for various packages and directories and modules in them which can be used for development.
+-----
+A class in python is defined in the format of "class ClassName: "
+The class name always begins with a capital letter and is the proper naming convention of classes
+According to PEP8, it is required to have 2 spaces before a class and after a class block
+A class can have multiple methods which are used by an instance of the class
+These instances of the classes are called objects which can be stored in another variable and these variables can utilise the methods of the object's class
+Ex:
+
+class Point:
+    def move(self): print("1")
+    def draw(self): print("2")
+variable1= Point() (the variable is used to hold an object of the point class)
+variable1.move() (prints 1 as the variable uses the move method of the point class)
+variable1.x=10 (the variable can get new properties and store values in them, but the initial class whose object it holds does not get modified)
+variable1.y=20
+
+Methods in python are defined using the def keyword which stands for define
+Syntax for a function in python is "def function-name(self,parameters):"
+The self keyword in the function parenthesis is similar to this keyword in other programming languages. Self is used to refer to the object in context or current class
+A class can have many functions which can be directly called for various tasks.
+Keyword arguments specify the value for each parameter we pass when we call a function
+Ex: def name(firstname, lastname). If we call the name function we pass arguments in it and the first argument passed is assigned to firstname and the next
+one to lastname, as it is in order and the parameters are also taken in that way. But, we can specify the parameter and pass the value for it separately
+Like, name(lastname="", firstname=""). In this case, the first argument is not automatically assigned to the first parameter, but to the specified one.
+These are called keyword arguments. The default way of usage is called positional arguments
+-----
+Constructors in python are used to initialize a class by default whenever an object of this class is created.
+Syntax for creating a constructor is " def __init__(self, parameter 1, ...) "
+The double underscore and init and double underscore is used to indicate a constructor
+The self keyword is used to reference the current object of the class being considered and assigns the parameters and arguments passed for that object to itself
+Ex:
+def __init__(self,x,y):
+    self.x = x
+    self.y = y
+    var1 = obj1(10,20).
+    print(var1.x)
+    (despite not declaring the variable x for the var1 variable it is able to print x because, the obj1 class already has a constructor defined
+     and in this constructor method the self keyword assigns the value of x parameter to the x variable of the object in context here i.e. var1
+     hence, var1 has a variable x with the entered value)
+-----
+List is a data structure in python which is a collection of similar or different kinds of data type elements in it.
+Lists are mutable data structures in python meaning they can be edited any time during run time.
+The syntax for declaring a list is list = [value1, value2, .....]
+
+Some common list methods are:
+
+append(value): Used to append or add an element to the current list and automatically does it to the last index
+insert(index, value): Used to append an element to the list at a specified index and value
+remove(value): Used to remove an element by specifying the value of the element from a list
+clear(): Used to delete all the elements of the array
+pop(): Used to remove the last element of the list by default
+index(value): Used to find the index of the specified value
+in( returns a boolean value ): The in method is similar to the in method in the string which returns position of the specified element in the list
+count(value): Used to provide the count of the element provided in the list of elements
+sort(): Used to sort the elements of a list. Does not provide any result
+reverse(): Sort the list in reverse order or descending order
+copy(): Used to replicate or copy the elements in the list
+-----
+Tuples are another data structure in python which are pretty similar to lists with the one major difference being that tuples cannot be modified i.e. immutable once declared and initialized
+The general syntax for declaring a tuple is tuple = (value1, value2, ....)
+If any variable in a tuple has to be printed or viewed, we simply refer to it by including the index in square brackets as in, num[0], to print 0th element
+Methods such as count, index of can be used only to view elements in a tuple
+Unpacking in a tuple allows variable assignment without doing it individually
+Say, coordinates = (1,2,3). Instead of assigning them as x=coordinate[0], y=coordinate[1], z=coordinate[2], We do it as:
+    x,y,z=coordinates.
+-----
+Dictionary in python is used to store variables in key value pairs.
+DDictionary is defined as
+Person: {
+          "name":"Arun",
+          "age": 24,
+          "birth_month":"March"
+          }
+These can be accessed by specifying the key in the dictionary and getting those values.
+print(person["name"]) can be used or print(person.get("age")) The key specified has to be exactly same and is case-sensitive
+If the key is not present or if the name is mis-spelt there is no result returned on executing the code.
+You can edit every element of the dictionary again, by specifying the key which you want to edit.
+Say if name has to be changed, person["name"] = "John". So the next time you print name key of person, john is printed
+-----
+Exception in python is used to handle any exception which we might encounter as part of code:
+use try and except to handle any errors faced. In case the code in try faces an error or exception the code in except block is executed
+Syntax:
+try:
+    code
+except:
+    code
+-----
+Modules in python are used to better organise the code in a more readable format. Whenever a piece of code is segregated into modules
+it is referred back again using import and the file name. Then the methods in the file are utilised by specifying filename.method()
+We can also use, from filename import method name, format to import specific methods instead of everything
+-----
+Packages in python contain a collection of modules in them and act as a directory of various modules. A package in python contains a __init__ file which marks that it is a package
+Whenever we are importing a module from a package in python we call it in the format packagename.modulename
+Or if we need a specific function in the module we call it as from " packagename.modulename import function name "
+

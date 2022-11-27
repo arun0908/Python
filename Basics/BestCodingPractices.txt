@@ -1,0 +1,9 @@
+Always call a method with parenthesis and not just method name like person1.talk,
+it returns a bound method exception which means, the method has a self parameter and this bounds it to the object calling it or class in which it is being called
+# when you try to print the above method call print(person1.talk()) it prints talk,none as the talk method prints talk and returns none which is printed
+
+The class name always begins with a capital letter and is the proper naming convention of classes
+According to PEP8, it is required to have 2 spaces before a class and after a class block
+
+
+
