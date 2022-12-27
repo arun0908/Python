@@ -19,6 +19,19 @@ def productExceptSelf(nums: list[int]) -> list[int]:
         postfix *= nums[i]
     return result
 
+    # Alternate approach considering no restrictions on space complexity. Similar to previous approach but takes extra
+    # space unlike previous approach.
+
+    # left = [1] * len(arr)
+    # right = [1] * len(arr)
+    # output = []
+    # for i in range(1, len(arr)):
+    #     left[i] = left[i - 1] * arr[i - 1]
+    # for i in range(1, len(arr)):
+    #     right[i] = right[i - 1] * arr[::-1][i - 1]
+    # for i in range(len(arr)):
+    #     output.append(left[i] * right[::-1][i])
+    # return output
 
 
 print(productExceptSelf([1,2,3,4]))  # [24,12,8,6]
