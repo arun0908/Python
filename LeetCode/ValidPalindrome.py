@@ -31,5 +31,5 @@ def alphanumeric(c):
             ord('a') <= ord(c) <= ord('z') or
             ord('0') <= ord(c) <= ord('9'))
     
-print(isPalindrome("0P"))
-print(isPalindrome("A man, a plan, a canal: Panama"))
+print(isPalindrome("0P"))  # False
+print(isPalindrome("A man, a plan, a canal: Panama"))  # True
