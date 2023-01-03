@@ -32,6 +32,19 @@ def partition(arr, l , r) -> int:
     # we return the index of the sorted pivot, so that we can the partition array and sort it recursively.
     return r
 
+    # Lumoto Partitioning
+    # pivot = elements[end]
+    # p_index = start
+
+    # for i in range(start, end):
+    #     if elements[i] <= pivot:
+    #         swap(i, p_index, elements)
+    #         p_index += 1
+
+    # swap(p_index, end, elements)
+
+    # return p_index
+
 if __name__ == "__main__":
     arr = [11,9,29,7,2,15,28]
     quicksort(arr, 0, len(arr)-1)
