@@ -3,6 +3,8 @@
 
 # We solve this by a modification of quick sort, where we sort an array in place and without modifying it. We consider the left and right indexes
 # at same position and instead of moving 0's to the right, we move the non 0 values to the left. 
+
+# This is similar to the lumoto partition technique of quick sort
 def moveZeroes(nums: list[int]) -> None:
     # consider the left and right indexes as 0. 
     l = 0
