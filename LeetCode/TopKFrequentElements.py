@@ -1,4 +1,4 @@
-#Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any
+# Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any
 # order.
 # Follow up: Your algorithm's time complexity must be better than O(n log n), where n is the array's size.
 
@@ -10,7 +10,7 @@
 # in the input occur only once. Then we can map the count from the map to the array based on key,value and then append
 # the elements from the highest count in reverse to a resultant array till the length of the array is = to k
 
-def topKFrequent(nums: list[int], k: int) -> list[int]:
+def topKFrequent(nums: list[int], k: int):
     count_map = {}
     for n in nums:
         count_map[n] = 1 + count_map.get(n, 0)
@@ -32,6 +32,5 @@ def topKFrequent(nums: list[int], k: int) -> list[int]:
                 return result
 
 
-print(topKFrequent([1,1,1,2,2,3], 2))  # [1,2]
-print(topKFrequent([1],1))  # [1]
-
+print(topKFrequent([1, 1, 1, 2, 2, 3], 2))  # [1,2]
+print(topKFrequent([1], 1))  # [1]

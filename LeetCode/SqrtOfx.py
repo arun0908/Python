@@ -27,6 +27,8 @@ def mySqrt(x: int) -> int:
     return ans
 
 # Continuation of the problem, to find out even the float part upto a specified limit to round up
+
+
 def preciseSqrt(x: int, round_up: int):
     ans = mySqrt(x)
     factor = 1
@@ -38,7 +40,8 @@ def preciseSqrt(x: int, round_up: int):
         ans = j - factor
     return ans
 
+
 # print(mySqrt(4))  # 2
-print(preciseSqrt(8,2))  # 2.8 = 2
-print(preciseSqrt(101,2))
+print(preciseSqrt(8, 2))  # 2.8 = 2
+print(preciseSqrt(101, 2))
 print(preciseSqrt(37, 3))

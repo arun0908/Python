@@ -6,16 +6,16 @@
 def isValid(s: str) -> bool:
     stack = []
     repo = {
-        ")" : "(",
-        "]" : "[",
-        "}" : "{"
+        ")": "(",
+        "]": "[",
+        "}": "{"
     }
     for c in s:
         if c in repo:
             if stack and stack[-1] == repo[c]:
                 stack.pop()
             else:
-               return False
+                return False
         else:
             stack.append(c)
 

@@ -20,5 +20,5 @@ def majorityElement(nums: list[int]) -> int:
     return result
 
 
-print(majorityElement([3,2,3]))  # 3
-print(majorityElement([2,2,1,1,1,2,2]))  # 2
+print(majorityElement([3, 2, 3]))  # 3
+print(majorityElement([2, 2, 1, 1, 1, 2, 2]))  # 2

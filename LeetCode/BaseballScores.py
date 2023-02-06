@@ -21,5 +21,6 @@ def calPoints(operations: list[str]) -> int:
             stack.append(int(o))
     return sum(stack)
 
-print(calPoints(["5","-2","4","C","D","9","+","+"]))  # 27
-print(calPoints(["5","2","C","D","+"]))  # 30
+
+print(calPoints(["5", "-2", "4", "C", "D", "9", "+", "+"]))  # 27
+print(calPoints(["5", "2", "C", "D", "+"]))  # 30

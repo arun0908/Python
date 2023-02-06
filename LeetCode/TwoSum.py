@@ -4,7 +4,7 @@
 # Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 
 
-def twoSum(nums: list[int], target: int) -> list[int]:
+def twoSum(nums: list[int], target: int):
     # Brute force method. This solution loops twice over input array giving us a time complexity of O(n^2)
     # result = []
     # for i in range(len(nums)):
@@ -16,7 +16,8 @@ def twoSum(nums: list[int], target: int) -> list[int]:
 
     # This is a one pass method, meaning looping once over the input array but using a dict/hash map to give O(n) time
     result = {}  # store value : index pairs
-    for i, n in enumerate(nums):  # enumerate function gives an object cont. pairs of counter and the value in the array
+    # enumerate function gives an object cont. pairs of counter and the value in the array
+    for i, n in enumerate(nums):
         temp = target - n
         if temp in result:
             return [result[temp], i]
@@ -31,5 +32,3 @@ def twoSum(nums: list[int], target: int) -> list[int]:
     #         l -= 1
     #     else:
     #         return[l, r]
-
-

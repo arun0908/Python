@@ -21,5 +21,5 @@ def removeElement(nums: list[int], val: int) -> int:
     # return i
 
 
-print(removeElement([3,2,2,3], 3))  # 2, [2,2]
-print(removeElement([0,1,2,2,3,0,4,2], 2))  # 5, [0,1,4,0,3]
+print(removeElement([3, 2, 2, 3], 3))  # 2, [2,2]
+print(removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2))  # 5, [0,1,4,0,3]

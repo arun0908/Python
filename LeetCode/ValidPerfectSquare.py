@@ -3,15 +3,15 @@
 # You must not use any built-in library function, such as sqrt.
 
 def isPerfectSquare(num: int) -> bool:
-# Brute Force approach with O(sqrt(n)) time complexity but not as efficient as binary search
+    # Brute Force approach with O(sqrt(n)) time complexity but not as efficient as binary search
     # for i in range(1, num+1):
     #     if i*i == num:
     #         return True
     #     if i*i > num:
     #         return False
 
-# Binary search method, with time complexity of O(log n)
-    l , r = 1, num
+    # Binary search method, with time complexity of O(log n)
+    l, r = 1, num
     while l <= r:
         mid = (l+r)//2
         if (mid*mid) > num:

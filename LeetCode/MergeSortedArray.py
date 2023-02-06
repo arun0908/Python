@@ -5,8 +5,9 @@ def merge(nums1: list[int], m: int, nums2: list[int], n: int) -> None:
     # The trick here is to start from the end, as we can fill up the zeros first and then keep the nums1 array same
 
     # Consider an element which stores the value of the last pointer
-    
-    last = m + n - 1 # Or we can even consider len(nums)-1 as nums1 is of length m + n 
+
+    # Or we can even consider len(nums)-1 as nums1 is of length m + n
+    last = m + n - 1
     # Looping through both arrays while their lengths are greater than 0
     while m > 0 and n > 0:
         if nums1[m-1] > nums2[n-1]:
@@ -26,4 +27,4 @@ def merge(nums1: list[int], m: int, nums2: list[int], n: int) -> None:
     print(nums1)
 
 
-print(merge([1,2,3,0,0,0],3,[2,5,6],3))  # [1,2,2,3,5,6]
+print(merge([1, 2, 3, 0, 0, 0], 3, [2, 5, 6], 3))  # [1,2,2,3,5,6]

@@ -4,7 +4,7 @@
 from collections import Counter
 
 
-def maxNumberOfBalloons(text: str) -> int:
+def maxNumberOfBalloons(text: str):
     balloon = Counter("balloon")
     text_map = Counter(text)
     result = float("inf")

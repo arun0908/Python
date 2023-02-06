@@ -15,9 +15,11 @@
 
 def guess(num: int) -> int:
     pass
+
+
 class Solution:
     def guessNumber(self, n: int) -> int:
-        l , r = 1, n
+        l, r = 1, n
         while l <= r:
             mid = (l+r)//2
             result = guess(mid)

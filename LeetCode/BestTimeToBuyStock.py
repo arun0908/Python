@@ -5,7 +5,7 @@
 def maxProfit(prices: list[int]) -> int:
     # A more optimized solution using the sliding window concept, where we consider 2 pointers and update them based on the logic.
     result = 0
-    l , r = 0, 1
+    l, r = 0, 1
     while r < len(prices):
         if prices[l] < prices[r]:
             temp = prices[r] - prices[l]
@@ -17,7 +17,7 @@ def maxProfit(prices: list[int]) -> int:
         r += 1
     return result
 
-    # Brute Force approach, but does not work always because of time complexity. 
+    # Brute Force approach, but does not work always because of time complexity.
 
     # for i in range(len(prices)):
     #     for j in range(i + 1, len(prices)):
@@ -31,4 +31,4 @@ def maxProfit(prices: list[int]) -> int:
 
 # print(maxProfit([7,1,5,3,6,4]))  # 5 (buy on day 1, sell on day 4)
 # print(maxProfit([7,6,4,3,1]))  # 0
-print(maxProfit([7,3,5,4,1,6])) # 5
+print(maxProfit([7, 3, 5, 4, 1, 6]))  # 5

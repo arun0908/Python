@@ -12,5 +12,5 @@ def canPlaceFlowers(flowerbed: list[int], n: int) -> bool:
     return n <= 0
 
 
-print(canPlaceFlowers([1,0,0,0,1], 1))  # True
-print(canPlaceFlowers([1,0,0,0,1], 2))  # False
+print(canPlaceFlowers([1, 0, 0, 0, 1], 1))  # True
+print(canPlaceFlowers([1, 0, 0, 0, 1], 2))  # False

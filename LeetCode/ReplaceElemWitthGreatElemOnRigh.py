@@ -9,4 +9,3 @@ def replaceElements(self, arr: list[int]) -> list[int]:
         arr[i] = right_max
         right_max = new_max
     return arr
-

@@ -8,5 +8,3 @@ def solution(strs: list[str]) -> str:
         if all([prefix[:i] == strs[j][:i] for j in range(1, len(strs))]):
             return prefix[:i]
     return ""
-
-

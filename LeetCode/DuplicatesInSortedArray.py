@@ -14,4 +14,4 @@ def removeDuplicates(nums: list[int]) -> int:
     return len(nums)
 
 
-print(removeDuplicates([0,0,1,1,1,2,2,3,3,4]))  # 5, [0,1,2,3,4]
+print(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]))  # 5, [0,1,2,3,4]

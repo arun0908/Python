@@ -8,11 +8,11 @@
 # mid element onto the first increasing line in some cases where mid might be pivot. So we set r to mid.
 
 def findPeak(arr, n):
-    l , r = 0, n-1
+    l, r = 0, n-1
     # We consider l < r and not equal to, because this causes an index out of bound error for mid+1. Instead we can just return left pointer
     # because, if l goes till right pointer or end, that means the peak or highest element is the end element and can be returned.
     while l < r:
-        mid = (l+r) //2
+        mid = (l+r) // 2
         if arr[mid] < arr[mid+1]:
             l = mid + 1
         # another approach for the same problem, but less effective.
@@ -24,5 +24,6 @@ def findPeak(arr, n):
             r = mid
     return arr[l]
 
-print(findPeak([1,2,3,2,1], 5))  # 3
-print(findPeak([1,2,3,4,5,6], 6))  # 6
+
+print(findPeak([1, 2, 3, 2, 1], 5))  # 3
+print(findPeak([1, 2, 3, 4, 5, 6], 6))  # 6

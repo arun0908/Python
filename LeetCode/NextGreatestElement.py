@@ -12,7 +12,7 @@ def nextGreaterElement(nums1: list[int], nums2: list[int]) -> list[int]:
     # ,and we append them to the result array based on the idx of those elements in nums1, and we pop elements from stack
 
     result = [-1] * len(nums1)
-    idx_map = { val:idx for idx,val in enumerate(nums1) }
+    idx_map = {val: idx for idx, val in enumerate(nums1)}
     stack = []
     for i in range(len(nums2)):
         while stack and nums2[i] > stack[-1]:
@@ -36,6 +36,7 @@ def nextGreaterElement(nums1: list[int], nums2: list[int]) -> list[int]:
     return result
 
 
-print(nextGreaterElement([4,1,2],[1,3,4,2])) # [-1,3,-1]
-print(nextGreaterElement([2,4], [1,2,3,4])) # [3,-1]
-print(nextGreaterElement([1,3,5,2,4],[6,5,4,3,2,1,7])) # [7,7,7,7,7]
+print(nextGreaterElement([4, 1, 2], [1, 3, 4, 2]))  # [-1,3,-1]
+print(nextGreaterElement([2, 4], [1, 2, 3, 4]))  # [3,-1]
+print(nextGreaterElement([1, 3, 5, 2, 4], [
+      6, 5, 4, 3, 2, 1, 7]))  # [7,7,7,7,7]
