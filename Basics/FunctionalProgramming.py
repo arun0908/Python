@@ -1,3 +1,6 @@
+from functools import reduce
+
+
 # Pure Function
 # The below function is said to be pure as it always returns an exprected and same output for the same input everytime, and does
 # not effect the outside world, such as printing the result(effects by displaying it on screen) instead of returning, or using the
@@ -43,3 +46,15 @@ print('=============================================')
 # second one from both the lists, third, etc. For example it can be used to combine username and emails for example
 zip_list = list(zip([1, 2, 3, 4], [1, 4, 9, 16]))
 print(zip_list)  # [(1,1),(2,4),(3,9),(4,16)]
+print('=============================================')
+
+
+# Reduce. Reduce is a function in python which is seldom used. It is similar to other map and filter functions and takes in a function as,
+# an input along with a iterable object and an initial value for the function. It returns an integer value as an output.
+def sums(sum, item):
+    # This returned value is used as the sum param for the next iteration of the iterable object.
+    return sum + item
+
+
+reduce_list = [1, 2, 4, 3, 6]
+print(f'Output of reduce function is : {reduce(sums,reduce_list,0)}')
