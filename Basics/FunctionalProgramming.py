@@ -1,4 +1,5 @@
 from functools import reduce
+from time import time
 
 
 # Pure Function
@@ -58,3 +59,36 @@ def sums(sum, item):
 
 reduce_list = [1, 2, 4, 3, 6]
 print(f'Output of reduce function is : {reduce(sums,reduce_list,0)}')
+print('=============================================')
+
+
+# List, Set, Dictionary comprehensions, which help us to form lists, sets, dictionaries without use of lengthy functions at the time of
+# creation itself.
+my_list = [i for i in range(0, 10)]
+list_2 = [i**2 for i in range(0, 10)]
+list_3 = [i**2 for i in range(0, 50) if i % 2 == 0]
+set_3 = {c for c in 'hheeelloooo'}
+dict = {i: i**2 for i in range(0, 10)}
+dict_2 = {i: i**2 for i in range(0, 50) if i % 2 != 0}
+print(f'{my_list}\n======\n{list_2}\n======\n{list_3}\n======\n{set_3}\n======\n{dict}\n======\n{dict_2}')
+print('=============================================')
+
+
+# Decorators in python are a design pattern, which are used to modify a function and can be used to test performance, caching, logging, etc.
+def performace(function):
+    def wrapper(*args, **kwargs):
+        t1 = time()
+        result = function(*args, **kwargs)
+        t2 = time()
+        print(f'The function took {t2-t1}s to run')
+        return result
+    return wrapper
+
+
+@performace
+def calc_time():
+    for i in range(1000000000):
+        continue
+
+
+calc_time()
