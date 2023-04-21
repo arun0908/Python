@@ -1,6 +1,7 @@
-from ModuleII import test2
-import random
+"""Python file to demonstrate use of modules and how they work"""
+
 from collections import Counter, defaultdict
+from ModuleII import test2
 # from ModuleII import test
 
 

@@ -1,4 +1,5 @@
-# Data for the new york city weather for the first few days in the month of january. Data manipulation using dictionary.
+"""Data for the new york city weather for the first few days in the month of january.
+    Data manipulation using dictionary."""
 weather = {
     "Jan 1": 27,
     "Jan 2": 31,
@@ -12,15 +13,18 @@ weather = {
     "Jan 10": 30
 }
 arr = [27, 31, 23, 34, 37, 38, 29, 30, 35, 30]
-print("Average weather in the first week of january: ", sum(arr[0:7])/len(arr[0:7]))
-print("Maximum weather in first 10 days of January: ",max(arr))
+print("Average weather in the first week of january: ",
+      sum(arr[0:7])/len(arr[0:7]))
+print("Maximum weather in first 10 days of January: ", max(arr))
 print("Temperature on Jan 9th: ", weather["Jan 9"])
 print("Temperature on Jan 4th: ", weather["Jan 4"])
 
-# poem.txt Contains famous poem "Road not taken" by poet Robert Frost. You have to read this file in python and print
-# every word and its count as show below. Think about the best data structure that you can use to solve this problem
+# poem.txt Contains famous poem "Road not taken" by poet Robert Frost.
+# You have to read this file in python and print
+# every word and its count as show below. Think about the best data structure
+# that you can use to solve this problem
 str_dict = {}
-with open('poem.txt', "r") as f:
+with open('poem.txt', "r", encoding='utf-8') as f:
     for line in f:
         tokens = line.split(' ')
         for token in tokens:
@@ -30,7 +34,3 @@ with open('poem.txt', "r") as f:
             else:
                 str_dict[token] = 1
 print(str_dict)
-
-
-
-

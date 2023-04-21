@@ -1,8 +1,10 @@
-# Practice code for Arrays/Lists in Python
+"""Practice code for Arrays/Lists in Python"""
 # 1. Expenses
 exp_list = [2200, 2350, 2600, 2130, 2190]
-print("Amount spent in February in excess to amount spent in January: ", exp_list[1]-exp_list[0])
-print("Total expense in the first quarter: ", exp_list[0]+exp_list[1]+exp_list[2])
+print("Amount spent in February in excess to amount spent in January: ",
+      exp_list[1]-exp_list[0])
+print("Total expense in the first quarter: ",
+      exp_list[0]+exp_list[1]+exp_list[2])
 for i in exp_list:
     if i == 2000:
         print("You spent exactly 2000 in one of the months")

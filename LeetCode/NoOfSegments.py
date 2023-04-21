@@ -6,7 +6,8 @@ def countSegments(s: str) -> int:
         return 0
     else:
         # my_list = s.split()
-        # my_list = s.split(' ') can be used, but it only splits based on single whitespace and incase there are more than one
+        # my_list = s.split(' ') can be used, but it only splits based on
+        # single whitespace and incase there are more than one
         # whitespaces, it fails. Even re.split(r"\s+",s) regex split fails.
         return len(s.split())
 
