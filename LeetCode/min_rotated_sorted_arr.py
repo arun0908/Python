@@ -17,12 +17,22 @@ def find_min(nums: list[int]) -> int:
     """
     left, right = 0, len(nums) - 1
     result = nums[0]
+
     while left <= right:
+        # Checking if the sub-array is already sorted by comparing the left
+        # element with the right element of the sub-array and returning the
+        # min of the left element and the result
         if nums[left] < nums[right]:
             result = min(result, nums[left])
             break
+
         mid = (left + right) // 2
         result = min(result, nums[mid])
+
+        # Checking if the mid position is in the left part of the array by
+        # comparing it with the leftmost element. If ever the mid lies in the
+        # rightmost or leftmost array, that means it is sorted and we cannot
+        # proceed further.
         if nums[left] <= nums[mid]:
             left = mid + 1
         else:
