@@ -1,14 +1,18 @@
-"""The LinkedList code from before is provided below. Add three functions to the LinkedList.
-    "get_position" returns the element at a certain position.
-    The "insert" function will add an element to a particular
-    spot in the list. "delete" will delete the first element with that particular value.
-    Then, use "Test Run" and "Submit" to run the test cases at the bottom."""
+"""
+The LinkedList code from before is provided below.
+Add three functions to the LinkedList.
+"get_position" returns the element at a certain position.
+The "insert" function will add an element to a particular
+spot in the list. "delete" will delete the first element with that particular
+value. Then, use "Test Run" and "Submit" to run the test cases at the bottom.
+"""
 
 
 class Element(object):
     """
     A class to represnet the element of each linked list
     """
+
     def __init__(self, value):
         self.value = value
         self.next = None

@@ -73,7 +73,7 @@ def add_two_numbers(
 
     #     # Setting l1 and l2 to next if present else None which is the edge
     #     # case where only one digit is present in both the nodes and sum is
-    #     # a two digit number
+    #     # a two-digit number
     #     l1 = l1.next if l1 else None
     #     l2 = l2.next if l2 else None
 
